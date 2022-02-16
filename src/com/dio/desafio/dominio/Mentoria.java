@@ -4,10 +4,12 @@ import java.time.LocalDate;
 
 public class Mentoria {
 	
+	//atributos
 	private String titulo;
 	private String descricao;
 	private LocalDate data;
 	
+	//métodos getters and setters
 	public String getTitulo() {
 		return titulo;
 	}
@@ -26,7 +28,10 @@ public class Mentoria {
 	public void setData(LocalDate data) {
 		this.data = data;
 	}
-
 	
+	@Override
+	public String toString() {
+		return "Titulo = " + titulo + "\nDescricao = " + descricao + "\nData = " + data;
+	}
 	
 }

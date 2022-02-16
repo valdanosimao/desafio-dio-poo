@@ -2,12 +2,12 @@ package com.dio.desafio.dominio;
 
 public class Curso {
 	
+	//atributos
 	private String titulo;
 	private String descricao;
-	private int cargaHoraria;
+	private int cargaHoraria;	
 	
-	
-	
+	//métodos getters and setters
 	public String getTitulo() {
 		return titulo;
 	}
@@ -27,6 +27,9 @@ public class Curso {
 		this.cargaHoraria = cargaHoraria;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Titulo = " + titulo + "\nDescricao = " + descricao + "\nCarga Horaria = " + cargaHoraria;
+	}	
 
 }
